@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nanit Routines</string>
+    <string name="widget_title">Nursery Naptime &amp; Wakeup</string>
+    <string name="widget_description">1-tap Naptime and Wakeup routines for Nanit Camera, Sound + Light, Lutron Lights, and Baby Daybook.</string>
+    <string name="tile_naptime_label">Nursery Naptime</string>
+    <string name="tile_wakeup_label">Nursery Wakeup</string>
+</resources>

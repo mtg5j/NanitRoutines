@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nanit Routines</string>
+    <string name="tile_label">Kip\'s Room Routines</string>
+    <string name="tile_description">1-tap Naptime and Wakeup routines for Kip\'s Room</string>
+</resources>

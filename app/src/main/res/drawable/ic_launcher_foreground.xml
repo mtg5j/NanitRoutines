@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Crescent moon representing nursery sleep & sound machine -->
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M58,30C45.85,30 36,39.85 36,52C36,64.15 45.85,74 58,74C63.2,74 67.97,72.18 71.74,69.16C64.42,68.39 58.7,62.19 58.7,54.65C58.7,46.6 65.23,40.07 73.28,40.07C74.2,40.07 75.1,40.16 75.97,40.33C71.93,34.11 64.94,30 58,30Z" />
+    <!-- Warm sun/star accent representing wakeup & smart light -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M72,32L74.2,36.8L79,39L74.2,41.2L72,46L69.8,41.2L65,39L69.8,36.8Z" />
+    <!-- Sound wave arcs -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M42,78h24v3h-24z" />
+</vector>

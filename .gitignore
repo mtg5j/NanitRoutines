@@ -1,0 +1,32 @@
+# Gradle & Android build outputs
+.gradle/
+build/
+app/build/
+wear/build/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Local / machine-specific config
+local.properties
+*.iml
+.idea/
+.cxx/
+
+# Signing & secrets (never commit)
+*.keystore
+*.jks
+*play-store-keys*.json
+*service-account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*~
