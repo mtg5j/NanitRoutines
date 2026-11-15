@@ -20,7 +20,7 @@ NanitRoutines/
   - **PhoneWearListenerService**: Listens for `/nanit_routines/run_routine` messages from the watch via Google Play Wearable Data Layer, executes routines, updates widgets, and syncs status back to the watch.
   - **UI**: 2-tab consolidated layout (`Home & Controls` and `Settings`) with tactile haptic and visual spring feedback (`FeedbackActionButton`).
 - **Wear OS App (`:wear`)**:
-  - **KipsRoomTileService**: Swipeable round-watch Tile with **🌙 Naptime** and **☀️ Wakeup** buttons.
+  - **KipsRoomTileService**: Swipeable round-watch Tile with **🌙 Nanit on** and **☀️ Nanit off** buttons.
   - **WearRoutineDispatcher**: Triggers phone execution over the Wearable Data Layer or falls back to direct Wi-Fi WebSocket control if the phone is disconnected.
 
 ---

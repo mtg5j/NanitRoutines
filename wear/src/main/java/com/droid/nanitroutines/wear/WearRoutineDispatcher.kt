@@ -105,7 +105,7 @@ object WearRoutineDispatcher {
     ) {
         val appCtx = context.applicationContext
         val isWakeup = routineType.equals("WAKEUP", ignoreCase = true)
-        val label = if (isWakeup) "Wakeup" else "Naptime"
+        val label = if (isWakeup) "Nanit off" else "Nanit on"
 
         // 1. Immediate haptic vibration on wrist + optimistic Tile status
         vibrateWatch(appCtx, doublePulse = false)

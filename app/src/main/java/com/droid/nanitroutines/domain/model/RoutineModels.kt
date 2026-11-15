@@ -2,11 +2,11 @@ package com.droid.nanitroutines.domain.model
 
 enum class RoutineType(val displayName: String, val subtitle: String) {
     NAPTIME(
-        displayName = "Naptime",
+        displayName = "Nanit on",
         subtitle = "Kips Room Main Lights OFF • Camera ON • Rain Sound & Light ON"
     ),
     WAKEUP(
-        displayName = "Wakeup",
+        displayName = "Nanit off",
         subtitle = "Kips Room Main Lights ON • Camera Standby • Sound & Light OFF • Baby Daybook"
     )
 }

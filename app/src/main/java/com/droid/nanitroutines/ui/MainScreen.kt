@@ -550,7 +550,7 @@ private fun HomeAndControlsTabContent(
 
     // 1. NAPTIME HERO CARD
     RoutineHeroCard(
-        title = "🌙 Naptime Routine",
+        title = "🌙 Nanit on",
         subtitle = "Nanit Camera ON • Sound + Light ON (${napCfg.soundTrack}) • Kip's Room Lights OFF",
         bulletPoints = listOf(
             "Nanit Pro Camera: Wake Camera ON (Active)",
@@ -563,9 +563,9 @@ private fun HomeAndControlsTabContent(
         ),
         gradientColors = listOf(Color(0xFF312E81), Color(0xFF1E1B4B)),
         buttonColor = Color(0xFF6366F1),
-        buttonLabel = "Start Naptime",
-        workingLabel = "Running Naptime...",
-        completedLabel = "✓ Naptime Complete!",
+        buttonLabel = "Nanit on",
+        workingLabel = "Running Nanit on...",
+        completedLabel = "✓ Nanit on Complete!",
         actionKey = "routine_naptime",
         activeActionKey = uiState.activeActionKey,
         completedActionKey = uiState.completedActionKey,
@@ -576,7 +576,7 @@ private fun HomeAndControlsTabContent(
 
     // 2. WAKEUP HERO CARD
     RoutineHeroCard(
-        title = "☀️ Wakeup Routine",
+        title = "☀️ Nanit off",
         subtitle = "Nanit Camera Standby • Sound + Light OFF • Baby Daybook Sleep",
         bulletPoints = listOf(
             "Nanit Pro Camera: Put Camera in Standby (OFF)",
@@ -590,9 +590,9 @@ private fun HomeAndControlsTabContent(
         gradientColors = listOf(Color(0xFF78350F), Color(0xFF451A03)),
         buttonColor = Color(0xFFF59E0B),
         buttonTextColor = Color(0xFF0F172A),
-        buttonLabel = "Start Wakeup",
-        workingLabel = "Running Wakeup...",
-        completedLabel = "✓ Wakeup Complete!",
+        buttonLabel = "Nanit off",
+        workingLabel = "Running Nanit off...",
+        completedLabel = "✓ Nanit off Complete!",
         actionKey = "routine_wakeup",
         activeActionKey = uiState.activeActionKey,
         completedActionKey = uiState.completedActionKey,
@@ -1352,7 +1352,7 @@ private fun RoutinePreferencesCard(
                         fontSize = 14.sp
                     )
                     Text(
-                        text = "When enabled, tapping Start Naptime or Start Wakeup also opens Google Home/Lutron so you can flip Kip's Lights",
+                        text = "When enabled, tapping Nanit on or Nanit off also opens Google Home/Lutron so you can flip Kip's Lights",
                         color = Color(0xFF94A3B8),
                         fontSize = 12.sp
                     )
@@ -1370,12 +1370,12 @@ private fun RoutinePreferencesCard(
             ) {
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = "Open Baby Daybook (Sleep) on Wakeup",
+                        text = "Open Baby Daybook (Sleep) on Nanit off",
                         color = Color.White,
                         fontSize = 14.sp
                     )
                     Text(
-                        text = "Automatically opens the Baby Daybook sleep tracker when Wakeup finishes",
+                        text = "Automatically opens the Baby Daybook sleep tracker when Nanit off finishes",
                         color = Color(0xFF94A3B8),
                         fontSize = 12.sp
                     )
@@ -1388,7 +1388,7 @@ private fun RoutinePreferencesCard(
 
             HorizontalDivider(color = Color(0xFF334155))
 
-            Text("Default Naptime Sound Track:", color = Color(0xFFCBD5E1), fontSize = 13.sp)
+            Text("Default Nanit on Sound Track:", color = Color(0xFFCBD5E1), fontSize = 13.sp)
             FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 RoutineConfig.AVAILABLE_TRACKS.forEach { track ->
                     FilterChip(
@@ -1400,14 +1400,14 @@ private fun RoutinePreferencesCard(
             }
 
             Text(
-                "Default Naptime Volume: ${(soundVolume * 100).roundToInt()}%",
+                "Default Nanit on Volume: ${(soundVolume * 100).roundToInt()}%",
                 color = Color(0xFFCBD5E1),
                 fontSize = 13.sp
             )
             Slider(value = soundVolume, onValueChange = { soundVolume = it })
 
             Text(
-                "Default Naptime Nightlight Brightness: ${(lightBrightness * 100).roundToInt()}%",
+                "Default Nanit on Nightlight Brightness: ${(lightBrightness * 100).roundToInt()}%",
                 color = Color(0xFFCBD5E1),
                 fontSize = 13.sp
             )

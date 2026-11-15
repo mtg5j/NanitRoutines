@@ -58,7 +58,7 @@ data class MainUiState(
     val activeRoutineType: RoutineType? = null,
     val activeSteps: List<RoutineStepResult> = emptyList(),
     val lastExecutionReport: RoutineExecutionReport? = null,
-    val statusBanner: String = "Ready for 1-tap Naptime or Wakeup",
+    val statusBanner: String = "Ready for 1-tap Nanit on or Nanit off",
     val isBabyDaybookInstalled: Boolean = false,
     // Visual button feedback state
     val activeActionKey: String? = null,

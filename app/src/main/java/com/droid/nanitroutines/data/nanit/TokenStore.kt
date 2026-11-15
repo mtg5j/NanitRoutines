@@ -237,7 +237,7 @@ class TokenStore(context: Context) {
     }
 
     var lastRoutineSummary: String
-        get() = prefs.getString("last_routine_summary", "Ready for Naptime or Wakeup").orEmpty()
+        get() = prefs.getString("last_routine_summary", "Ready for Nanit on or Nanit off").orEmpty()
         set(value) = prefs.edit().putString("last_routine_summary", value).apply()
 
     fun clearAuth() {

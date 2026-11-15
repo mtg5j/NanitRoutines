@@ -20,7 +20,7 @@ abstract class BaseRoutineTileService(
         super.onStartListening()
         qsTile?.apply {
             state = Tile.STATE_INACTIVE
-            label = "Nursery ${routineType.displayName}"
+            label = routineType.displayName
             updateTile()
         }
     }

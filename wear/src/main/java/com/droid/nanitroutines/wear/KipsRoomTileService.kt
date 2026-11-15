@@ -100,14 +100,14 @@ class KipsRoomTileService : TileService() {
             .build()
 
         val naptimeButton = buildPillActionButton(
-            label = "🌙  Naptime",
+            label = "🌙  Nanit on",
             backgroundColor = 0xFF4F46E5.toInt(),
             textColor = 0xFFFFFFFF.toInt(),
             clickableId = ID_CLICK_NAPTIME
         )
 
         val wakeupButton = buildPillActionButton(
-            label = "☀️  Wakeup",
+            label = "☀️  Nanit off",
             backgroundColor = 0xFFD97706.toInt(),
             textColor = 0xFFFFFFFF.toInt(),
             clickableId = ID_CLICK_WAKEUP

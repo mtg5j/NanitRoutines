@@ -9,6 +9,7 @@ import com.droid.nanitroutines.domain.model.LightIntegrationMode
 import com.droid.nanitroutines.domain.model.NanitBabyDevice
 import com.droid.nanitroutines.domain.model.NurseryTelemetry
 import com.droid.nanitroutines.domain.model.RoutineConfig
+import com.droid.nanitroutines.domain.model.RoutineType
 import com.droid.nanitroutines.domain.usecase.ExecuteRoutineUseCase
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
@@ -21,6 +22,11 @@ class MainScreenComposeTest {
     @Test
     fun `default UI state configures Rain for Naptime and Kips Room Main Lights plus Baby Daybook Sleep for Wakeup`() {
         val state = MainUiState()
+
+        // Verify user-facing routine labels
+        assertEquals("Nanit on", RoutineType.NAPTIME.displayName)
+        assertEquals("Nanit off", RoutineType.WAKEUP.displayName)
+        assertEquals("Ready for 1-tap Nanit on or Nanit off", state.statusBanner)
 
         // Verify Naptime defaults
         assertEquals("Rain", state.naptimeConfig.soundTrack)

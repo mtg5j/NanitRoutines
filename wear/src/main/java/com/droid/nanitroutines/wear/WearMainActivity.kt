@@ -94,7 +94,7 @@ private fun WearWatchScreen(
                 .height(42.dp)
         ) {
             Text(
-                text = "🌙  Naptime",
+                text = "🌙  Nanit on",
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
                 fontSize = 14.sp
@@ -112,7 +112,7 @@ private fun WearWatchScreen(
                 .height(42.dp)
         ) {
             Text(
-                text = "☀️  Wakeup",
+                text = "☀️  Nanit off",
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
                 fontSize = 14.sp

@@ -220,7 +220,7 @@ def main():
             track_name="wear:internal",
             version_code=wear_vc,
             release_name=f"1.3.2-wear ({wear_vc})",
-            notes="Standalone + companion Pixel Watch Tile for 1-tap Naptime and Wakeup routines.",
+            notes="Standalone + companion Pixel Watch Tile for 1-tap Nanit on and Nanit off routines.",
         )
 
     print("4. Committing edit to Google Play Console...")
